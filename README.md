@@ -10,7 +10,7 @@ The repository is organized into directories for each SOLID principle, with exam
 
 **Directory:** `single-resp`
 
-- **File:** `calorie-taker.js`
+- **File:** `calorie-tracker.js`
   - **Description:** Demonstrates the Single Responsibility Principle by separating the responsibility of tracking calories and logging messages.
 
 ### 2. Open/Closed Principle (OCP)
@@ -67,7 +67,7 @@ To run the examples, follow these steps:
 2. **Run Examples**
 
    ```bash
-    node single-resp/calorie-taker.js
+    node single-resp/calorie-tracker.js
     node open-closed/print-quiz.js
     node liskov-substitution/birds.js
     node liskov-substitution/shapes.js

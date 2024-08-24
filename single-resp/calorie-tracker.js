@@ -1,9 +1,9 @@
 // Importing the logging function from a shared module
-// Demonstrates separation of concerns; logging is not handled by the CalorieTaker class
+// Demonstrates separation of concerns; logging is not handled by the CalorieTracker class
 import { logMessage } from '../common/logger.js';
 
 // Class responsible for tracking calorie intake
-class CalorieTaker {
+class CalorieTracker {
 
   // Constructor initializes the maximum allowed calories and sets the current calories to 0
   constructor(maxCalories) {
@@ -22,8 +22,8 @@ class CalorieTaker {
   }
 }
 
-// Creating an instance of CalorieTaker with a limit of 2000 calories
-const calorieTracker = new CalorieTaker(2000);
+// Creating an instance of CalorieTracker with a limit of 2000 calories
+const calorieTracker = new CalorieTracker(2000);
 // Tracking calories for various food items
 calorieTracker.trackCalories(200);  // Consumes 200 calories
 calorieTracker.trackCalories(1000); // Consumes 1000 calories
@@ -31,7 +31,7 @@ calorieTracker.trackCalories(1000); // Consumes another 1000 calories, triggerin
 
 /*
 Explanation of Single Responsibility Principle (SRP):
-1. The CalorieTaker class is responsible only for tracking calorie intake. 
+1. The CalorieTracker class is responsible only for tracking calorie intake. 
    It does not handle logging or any other unrelated functionality.
    
 2. The logging responsibility is separated into a distinct function (logMessage), 
@@ -39,5 +39,5 @@ Explanation of Single Responsibility Principle (SRP):
 
 3. This separation makes the code easier to maintain and extend. 
    If the logging logic needs to change, it can be updated independently 
-   without affecting the CalorieTaker class.
+   without affecting the CalorieTracker class.
 */
