@@ -62,9 +62,13 @@ To run the examples, follow these steps:
 
    ```bash
     git clone https://github.com/kuldeepyadavky/solid-principles-in-js.git
-  cd solid-principles-in-js
+  
 
-2. **Run Examples**
+2. **Navigate to the Repository**
+   ```bash
+   cd solid-principles-in-js
+   ```
+3. **Run Examples**
 
    ```bash
     node single-resp/calorie-tracker.js
