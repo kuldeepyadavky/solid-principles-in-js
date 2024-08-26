@@ -74,3 +74,7 @@ To run the examples, follow these steps:
     node interface-segregation/entity-mixins.js
     node interface-segregation/entity-object-assign-mixin.js
     node dependency-inversion/payment-processor.js
+
+## License
+
+This project is licensed under the MIT License.
